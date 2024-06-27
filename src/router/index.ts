@@ -7,6 +7,7 @@ import FAQ from "../components/FAQ.vue";
 import SCAN from "../components/Scan.vue";
 import TAndC from "../components/T&C.vue";
 import NotFound from "../pages/NotFound.vue";
+import ManualVerification from "../components/ManualVerification.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,6 +20,7 @@ const router = createRouter({
     { path: "/faq",component:FAQ},
     { path: "/scan",component:SCAN},
     { path: "/terms",component:TAndC},
+    { path: "/manual_verify",component:ManualVerification},
     { path: '/:pathMatch(.*)*', component: NotFound }, 
     
   ]

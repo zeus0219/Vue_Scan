@@ -11,7 +11,7 @@
     <!-- <div id="scanresult">{{ scanResult }}</div> -->
     <div class="absolute bottom-[100px] left-1/2 transform -translate-x-1/2 z-[1000]">
       <v-btn v-if="errorText === ''" @click="gotoHome" class="uppercase w-[auto] rounded-[100px] !bg-[white]  text-[red]">Cancel</v-btn>
-      <v-btn v-if="errorText !== ''" @click="gotoHome" class="uppercase w-[auto] rounded-[100px] !bg-[white]  text-[red]">MANUAL VERIFICATION</v-btn>
+      <v-btn v-if="errorText !== ''" @click="gotoManual" class="uppercase w-[auto] rounded-[100px] !bg-[white]  text-[red]">MANUAL VERIFICATION</v-btn>
     </div>
   </div>
 </template>
@@ -53,6 +53,9 @@ export default {
     },
     gotoFaq(){
       return location.href = '/faq'
+    },
+    gotoManual(){
+      return location.href = '/manual_verify'
     },
     startVideoScan() {
       console.log('Start video scan');
