@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Scan</title>
+  </head>
+  <body>
+    <input type="hidden" class="videokey" value="e588bf50c9a92f31fa45eba15705a7b5"></input>
+    <div id="button-wrapper" style="display:none"><button class="videoscan">Start</button></div>
+    <div id="cancel-wrapper" style="display:none"><button id="videocancel"></button></div>
+    <div id="scanresult"></div>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+    <script src="assets/adapter-latest.js"></script>
+    <script src="assets/client-bundle.js"></script>
+    <script>
+      window.videoscan_finish_callback = function (is_success, res) {
+        console.log(is_success,res);
+      }
+    </script>
+  </body>
+</html>
