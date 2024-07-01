@@ -16,8 +16,6 @@ export default defineConfig(({ command }) => {
       }
     },
     build: {
-      outDir: 'public',  
-      assetsDir: 'assets',
       chunkSizeWarningLimit: 1000,
       commonjsOptions: { exclude: ["survey-core", "survey-creator-core"] },
     },

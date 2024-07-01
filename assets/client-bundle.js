@@ -226,7 +226,7 @@
         let is_ok = await startMediasoup();
         if (is_ok) {
           var ui = window._v_ui
-          ui.preloader.style['display'] = 'block'
+          // ui.preloader.style['display'] = 'block'
           ui.cancel.style['display'] = 'block'
           ui.videoWrapper.style['display'] = 'block'
           await startWebrtcSend();
